@@ -1,4 +1,4 @@
-# DSDE1-Computing1 example Assessment instructions
+# DSDE1-Computing 1 example Assessment instructions
 This is an open book/computer/internet assessment. You are allowed to refer to your own notes, previous code, and search online. You are NOT allowed to receive or ask for assistance from any individual such as a fellow classmate or anyone else during the assessment. You may NOT share your code with anyone else until all students have completed the assessment and submission has closed.
 
 The code will be evaluated, not only on the basis of how it works but also on how clearly it is commented and and readable it is.
