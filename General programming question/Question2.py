@@ -36,5 +36,12 @@ or the program is largely incomplete.
 # returns [3, 4, 5, 6]
 # weight = 2
 
-def largerThanN():
-    return
+def largerThanN(input_list, n):
+    larger_list = []
+    for i in input_list:
+        if i > n:
+            larger_list.append(i)
+
+    return larger_list
+
+print(largerThanN([1, 2, 3, 4, 5, 6], 2))
