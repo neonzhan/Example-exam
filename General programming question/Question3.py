@@ -40,5 +40,28 @@ or the program is largely incomplete.
 #       returns 'the jack cow and jumped jill over went the up moon the'
 # weight = 3
 
-def merge_sentences():
-    return 
+def merge_sentences(sent_a, sent_b):
+    # Turn each sentence into a list
+    sent_lista = list(sent_a.split(" "))
+    sent_listb = list(sent_b.split(" "))
+    # Create a list for alternating words
+    merge_list = []
+    merge_sent = ""
+
+    # Make sure that lengths are the same
+    if len(sent_lista) != len(sent_listb):
+        print("The strings are of different lengths")
+        return None
+    else:
+        # Going through the length of sent_lista, append the index number i to the merge_list
+        for i in range(len(sent_lista)):
+            merge_list.append(sent_lista[i])
+            merge_list.append(sent_listb[i])
+
+    # Add all from the list into a string
+    for i in merge_list:
+        merge_sent += i + " "
+    
+    return merge_sent
+
+print(merge_sentences("the cow jumped over the moon", "jack and jill went up the"))

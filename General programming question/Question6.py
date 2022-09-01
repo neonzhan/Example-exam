@@ -34,6 +34,24 @@ or the program is largely incomplete.
 # input dictionary whose values are all whole numbers (values, not keys).
 # # weight = 5 
 
-def value_greatest_even():
-    return 
+def value_greatest_even(dict_a):
+    # Append all values into a list
+    val_list = []
+    for values in dict_a.values():
+        val_list.append(values)
+    
+    # Check if all the values are even
+    even_list = []
+    for value in val_list:
+        if value % 2 == 0:
+            even_list.append(value)
 
+    # Find the largest value
+    largest = 0
+    for i in even_list:
+        if i > largest:
+            largest = i
+
+    return largest
+
+print(value_greatest_even({"Agent": 4, "Boots": 7, "Candy": 16.4, "Dunks": 15, "Elephant": 12}))

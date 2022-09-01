@@ -34,10 +34,16 @@ or the program is largely incomplete.
 # whose keys are all strings.
 # weight = 2
 
-def longest_key():
-    return 
+def longest_key(dict_a):
+    list_keys = []
+    for key in dict_a.keys():
+        list_keys.append(key)
 
+    longest_key = ""
+    for key in list_keys:
+        if len(key) > len(longest_key):
+            longest_key = key
 
+    return longest_key
 
-
-
+print(longest_key({"Name": "Leon", "age": 19, "Password": 123}))
